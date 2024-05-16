@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .full-width {
+            grid-column: span 3;
+        }
+        .half-width {
+            grid-column: span 2;
+        }
+        .third-width {
+            grid-column: span 1;
+        }
+        .pie-chart, .bar-chart, .map {
+            height: 200px;
+        }
+        .bar-chart img, .pie-chart img, .map img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card full-width">
+            <h2>Weekly Profits</h2>
+            <div class="bar-chart">
+                <img src="file-LryWPc4CigcjdMOJm3EkNgpB" alt="Weekly Profits">
+            </div>
+        </div>
+        <div class="card third-width">
+            <h2>Revenue by Employee</h2>
+            <div class="bar-chart">
+                <img src="file-LryWPc4CigcjdMOJm3EkNgpB" alt="Revenue by Employee">
+            </div>
+        </div>
+        <div class="card third-width">
+            <h2>Quarterly Net Profits</h2>
+            <p>$275k</p>
+        </div>
+        <div class="card third-width">
+            <h2>Downtime</h2>
+            <p>15.02%</p>
+        </div>
+        <div class="card half-width">
+            <h2>Conversion by Source</h2>
+            <div class="bar-chart">
+                <img src="file-LryWPc4CigcjdMOJm3EkNgpB" alt="Conversion by Source">
+            </div>
+        </div>
+        <div class="card third-width">
+            <h2>Average Profit per Customer</h2>
+            <p>$148.31</p>
+        </div>
+        <div class="card third-width">
+            <h2>Expenses by Product Category</h2>
+            <div class="pie-chart">
+                <img src="file-LryWPc4CigcjdMOJm3EkNgpB" alt="Expenses by Product Category">
+            </div>
+        </div>
+        <div class="card third-width">
+            <h2>Sales by State</h2>
+            <div class="map">
+                <img src="file-LryWPc4CigcjdMOJm3EkNgpB" alt="Sales by State">
+            </div>
+        </div>
+        <div class="card full-width">
+            <h2>This Week's Progress to Goal</h2>
+            <p>35.8%</p>
+        </div>
+    </div>
+</body>
+</html>
